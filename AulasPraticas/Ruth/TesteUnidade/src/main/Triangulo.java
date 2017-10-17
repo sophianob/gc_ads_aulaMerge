@@ -32,9 +32,7 @@ public class Triangulo
          else
          {
             if ((a != b) && (b != c) && (c != a)){
-               return Resposta.ISOCELES;
-            }else{       
-               return Resposta.ESCALENO;
+               return Resposta.NAOTRIANGULO;
             }
          }
       }
