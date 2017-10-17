@@ -27,19 +27,19 @@ public class Triangulo
       if ((c < a+b) && (b < c+a) && (a < c+b))
       {
          if ((a == b) && (b == c)){        
-            return Resposta.ESCALENO;       
+            return Resposta.ISOCELES;;       
          }
          else
          {
             if ((a != b) && (b != c) && (c != a)){
-               return Resposta.ISOCELES;
+               return Resposta.EQUILATERO;;
             }else{       
-               return Resposta.EQUILATERO;
+               return Resposta.ESCALENO;;
             }
          }
       }
       else{
-         return Resposta.TRIANGULO;
+         return Resposta.NAOTRIANGULO;;
       }
 
        
