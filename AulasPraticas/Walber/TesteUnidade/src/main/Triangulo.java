@@ -15,7 +15,7 @@ public class Triangulo
    
    public enum Resposta 
    {
-		EQUILATERO, ISOCELES, ESCALENO, NAOTRIANGULO;
+		EQUILATERO, ISOCELES, ESCALENO, NAOTRIANGULO, TRIANGULO;
    }
    
    public static Resposta verificaTipoTriangulo(int a, int b, int c){
@@ -27,14 +27,14 @@ public class Triangulo
       if ((c < a+b) && (b < c+a) && (a < c+b))
       {
          if ((a == b) && (b == c)){        
-            return Resposta.EQUILATERO;       
+            return Resposta.ISOCELES;       
          }
          else
          {
             if ((a != b) && (b != c) && (c != a)){
-               return Resposta.ESCALENO;
+               return Resposta.EQUILATERO;
             }else{       
-               return Resposta.ISOCELES;
+               return Resposta.ESCALENO;
             }
          }
       }
